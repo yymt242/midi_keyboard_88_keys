@@ -1,8 +1,7 @@
 # Arduino code for my MIDI keyboard
 
-> My MIDI keyboard is consist of 2 parts from 2 used CASIO Organ Keyboards (the )
+> My MIDI keyboard is consist of 2 parts from 2 used CASIO Organ Keyboards (CASIO CTK 660L & CASIO CTK 601)
 >
-> 
 
 - Microcontroller: Arduino Mega 2560
 
@@ -21,11 +20,10 @@
 ## Velocity sensitive
 
 Fomula of velocity
-$$
-y = \left(129\ -\ 107\cdot\log^{2}_{500}\left(x-2\right)\right)\cdot\log_{700}\left(400-x\right)\cdot1.08
-$$
+
+$y = \left(129\ -\ 107\cdot\log^{2}_{500}\left(x-2\right)\right)\cdot\log_{700}\left(400-x\right)\cdot1.08$
 
 - $x \in [3,399]$ time between 2 buttons pressed in the same key, in miliseconds 
 - $y \in [0,127]$ velocity
 
-<img src="D:\study\E\project\88MIDI_PIANO\New folder\midi_keyboard_88_keys\fig\velocity.png" style="zoom:50%;" />
+<img src=".\fig\velocity.png" style="zoom:50%;" />
